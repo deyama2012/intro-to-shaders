@@ -1,0 +1,45 @@
+﻿body {
+    width: 95%;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.extra {
+    margin-top: 200px;
+}
+
+
+img {
+    width: 50%;
+}
+
+.accent {
+    font-style: italic;
+}
+
+.examples {
+    display: inline-flex;
+}
+
+    .examples img {
+        object-fit: cover;
+        width: 20%;
+    }
+
+.footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-auto-columns: 50% 50%;
+    font-size: 20px;
+}
+
+.back {
+    grid-column: 1;
+    place-self: start;
+}
+
+.next {
+    grid-column: 2;
+    place-self: end;
+}
