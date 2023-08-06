@@ -1,13 +1,29 @@
-﻿body {
+﻿
+body {
     width: 95%;
     font-size: 18px;
     line-height: 1.5;
 }
 
+@media screen and (max-width:1500px) {
+    .main {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width:3000px) {
+    .main {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
 .extra {
     margin-top: 200px;
 }
-
 
 img {
     width: 50%;
@@ -18,7 +34,10 @@ img {
 }
 
 .examples {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row; /* make main axis horizontal (default value) */
+    justify-content: center; /* center items horizontally, in this case */
+    align-content: center; /* center items vertically, in this case */
 }
 
     .examples img {
